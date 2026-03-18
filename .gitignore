@@ -1,0 +1,125 @@
+# ── Environment Variables ────────────────────────────────────
+# NEVER push .env — contains passwords and secret keys
+.env
+.env.local
+.env.production
+
+# ── Python ──────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# ── Virtual Environment ──────────────────────────────────────
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ── Django ───────────────────────────────────────────────────
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# ── Media & Static Files ─────────────────────────────────────
+# User uploaded files — too large for GitHub
+media/
+staticfiles/
+static/
+
+# ── Docker ───────────────────────────────────────────────────
+# Don't push local Docker volumes
+postgres_data/
+redis_data/
+
+# ── Database ─────────────────────────────────────────────────
+*.sql
+*.sqlite
+*.db
+
+# ── Exports ──────────────────────────────────────────────────
+# Generated PDF and CSV exports
+exports/
+*.csv
+*.pdf
+
+# ── Testing ──────────────────────────────────────────────────
+.coverage
+htmlcov/
+.pytest_cache/
+coverage.xml
+*.cover
+.hypothesis/
+
+# ── IDE & Editors ────────────────────────────────────────────
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# ── Operating System ─────────────────────────────────────────
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ── Celery ───────────────────────────────────────────────────
+celerybeat-schedule
+celerybeat.pid
+*.pid
+
+# ── Logs ─────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+
+# ── Temporary Files ──────────────────────────────────────────
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+*.orig
+
+# ── Postman ──────────────────────────────────────────────────
+# Don't push Postman collections with tokens
+postman_environment.json
